@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ML artifacts
+*.joblib
+*.pkl
+*.pickle
+
+# Datasets
+datasets/raw/
+datasets/generated/
+
+# Network captures
+*.pcap
+*.pcapng
+*.cap
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+requirements.txt
+        ↓
+Human-maintained direct dependencies
+
+requirements-lock.txt
+        ↓
+Exact installed dependency versions

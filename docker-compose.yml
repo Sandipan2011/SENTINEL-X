@@ -1,0 +1,49 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentinel-x-backend
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      APP_NAME: SENTINEL-X
+      APP_VERSION: 0.1.0
+      ENVIRONMENT: development
+      REDIS_URL: redis://redis:6379/0
+      DATABASE_URL: postgresql+psycopg://sentinel:sentinel@postgres:5432/sentinel
+      STREAM_NAME: sentinel:flows
+      MODEL_DIRECTORY: models
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  redis:
+    image: redis:7-alpine
+    container_name: sentinel-x-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: sentinel-x-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: sentinel
+      POSTGRES_USER: sentinel
+      POSTGRES_PASSWORD: sentinel
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  redis_data:
+  postgres_data:
