@@ -2,8 +2,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
+from backend.api.alerts import router as alerts_router
+from backend.api.websocket import router as websocket_router
 
 from backend.config.security import security_policy
 from backend.config.settings import settings
