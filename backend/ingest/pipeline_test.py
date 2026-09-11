@@ -22,39 +22,31 @@ def main():
 
     packet_count = 0
 
-    try:
-        for packet in read_pcap(pcap_file):
-            packet_count += 1
-            aggregator.add_packet(packet)
+    for packet in read_pcap(pcap_file):
+        packet_count += 1
+        aggregator.add_packet(packet)
 
-        print(f"Packets processed : {packet_count}")
-        print(f"Flows generated   : {len(aggregator.flows)}")
+    flows = aggregator.flows.values()
 
+    print(f"Packets processed : {packet_count}")
+    print(f"Flows generated   : {len(aggregator.flows)}")
+
+    print()
+    print("-" * 60)
+
+    for index, flow in enumerate(flows, start=1):
+        print(f"Flow #{index}")
+        print(
+            f"  {flow.src_ip}:{flow.src_port}"
+            f" -> "
+            f"{flow.dst_ip}:{flow.dst_port}"
+        )
+        print(f"  Protocol       : {flow.key.protocol}")
+        print(f"  Packets        : {flow.packets}")
+        print(f"  Bytes          : {flow.bytes}")
+        print(f"  Duration       : {flow.duration:.4f}s")
+        print(f"  Byte ratio     : {flow.bytes_ratio}")
         print()
-        print("-" * 60)
-
-        for index, flow in enumerate(
-            aggregator.flows.values(),
-            start=1
-        ):
-            print(f"Flow #{index}")
-
-            print(
-                f"  {flow.src_ip}:{flow.src_port}"
-                f" -> "
-                f"{flow.dst_ip}:{flow.dst_port}"
-            )
-
-            print(f"  Protocol       : {flow.key.protocol}")
-            print(f"  Packets        : {flow.packets}")
-            print(f"  Bytes          : {flow.bytes}")
-            print(f"  Duration       : {flow.duration:.4f}s")
-            print(f"  Byte ratio     : {flow.bytes_ratio}")
-
-            print()
-
-    except Exception as exc:
-        print(f"ERROR: {exc}")
 
 
 if __name__ == "__main__":

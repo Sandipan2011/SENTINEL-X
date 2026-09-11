@@ -1,0 +1,19 @@
+html {
+    min-width: 320px;
+    background: #070a0f;
+}
+
+
+body {
+    min-width: 320px;
+}
+
+
+#root {
+    min-height: 100vh;
+}
+
+
+::selection {
+    background: rgba(74, 222, 128, 0.22);
+}

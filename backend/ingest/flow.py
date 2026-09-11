@@ -44,9 +44,6 @@ class FlowKey:
 
 @dataclass
 class FlowState:
-    """
-    Aggregated bidirectional flow state.
-    """
 
     key: FlowKey
 
@@ -67,6 +64,8 @@ class FlowState:
 
     tcp_flags: set[str] | None = None
 
+    syn_packets: int = 0
+    
     def __post_init__(self):
         if self.tcp_flags is None:
             self.tcp_flags = set()

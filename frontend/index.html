@@ -1,79 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SENTINEL-X Dashboard</title>
-    <style>
-      body { font-family: Arial, sans-serif; background: #0b1020; color: #eaf2ff; margin: 0; padding: 24px; }
-      h1 { margin-bottom: 10px; }
-      .meta { color: #a9b7d1; margin-bottom: 18px; }
-      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 22px; }
-      .card { background: #121c30; border: 1px solid #1f2d4d; border-radius: 10px; padding: 18px; }
-      .label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8fa6d1; }
-      .value { font-size: 28px; font-weight: 700; margin-top: 8px; }
-      table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-      th, td { padding: 12px 10px; border-bottom: 1px solid #1f2d4d; text-align: left; }
-      th { color: #9bb2df; }
-      td { color: #edf4ff; }
-      .severity { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
-      .critical { background: rgba(223,62,62,.18); color: #ff9b9b; }
-      .high { background: rgba(235,148,52,.18); color: #ffc176; }
-      .medium { background: rgba(76,138,255,.18); color: #9ec2ff; }
-      .low { background: rgba(85,185,125,.18); color: #a7efbe; }
-      button { background: linear-gradient(135deg, #2d7ef2, #4dc7ff); color: white; border: none; border-radius: 8px; padding: 10px 16px; cursor: pointer; font-weight: 700; }
-    </style>
+    <title>frontend</title>
   </head>
   <body>
-    <h1>SENTINEL-X</h1>
-    <div class="meta">Read-only cyber threat detection dashboard</div>
-    <div class="stats">
-      <div class="card"><div class="label">Total flows</div><div id="flowCount" class="value">0</div></div>
-      <div class="card"><div class="label">Alerts</div><div id="alertCount" class="value">0</div></div>
-      <div class="card"><div class="label">Threat classes</div><div id="threatKinds" class="value">0</div></div>
-    </div>
-    <button id="refreshButton">Replay new traffic</button>
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Threat</th>
-          <th>Severity</th>
-          <th>Source</th>
-          <th>Destination</th>
-          <th>Confidence</th>
-        </tr>
-      </thead>
-      <tbody id="alertRows"></tbody>
-    </table>
-
-    <script>
-      async function loadReplay() {
-        const response = await fetch('/api/replay');
-        const data = await response.json();
-        document.getElementById('flowCount').textContent = data.flow_count || 0;
-        document.getElementById('alertCount').textContent = data.alert_count || 0;
-        const uniqueThreats = new Set((data.alerts || []).map(alert => alert.threat_class)).size;
-        document.getElementById('threatKinds').textContent = uniqueThreats;
-
-        const rows = document.getElementById('alertRows');
-        rows.innerHTML = '';
-        (data.alerts || []).forEach(alert => {
-          const tr = document.createElement('tr');
-          tr.innerHTML = `
-            <td>${new Date(alert.timestamp).toLocaleString()}</td>
-            <td>${alert.threat_class}</td>
-            <td><span class="severity ${alert.severity || 'low'}">${alert.severity || 'low'}</span></td>
-            <td>${alert.source_ip || 'n/a'}</td>
-            <td>${alert.destination_ip || 'n/a'}</td>
-            <td>${(alert.confidence || 0).toFixed(2)}</td>
-          `;
-          rows.appendChild(tr);
-        });
-      }
-
-      document.getElementById('refreshButton').addEventListener('click', loadReplay);
-      loadReplay();
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
