@@ -24,12 +24,9 @@
 
 ## 🚀 About SENTINEL-X
 
-I’m a developer who enjoys building practical, scalable, and user-friendly applications. I love learning new technologies, improving workflows, and turning ideas into real projects.
+SENTINEL-X is a cyber threat detection prototype focused on analyzing passive network telemetry to identify suspicious activity without inspecting packet contents. Built mainly in Python, with a React frontend for visual monitoring, the project ingests flow metadata, extracts behavioral features over short windows, and applies explainable detection logic to surface alerts for issues like DDoS attacks, botnet beaconing, DNS tunneling, port scanning, TLS-based malware patterns, and data exfiltration. It is designed as a practical research/demo system rather than a full production IDS.
 
-- 🔭 Currently exploring: Web development, UI/UX, and product-focused apps
-- 🌱 Learning: React, Node.js, APIs, cloud basics, and clean architecture
-- 💡 Interests: Full-stack development, automation, and open-source contribution
-- 📫 Reach me: tridibduari26@gmail.com
+The repository is structured around a backend detection pipeline, API and WebSocket services, replay utilities for synthetic traffic, and a lightweight dashboard frontend. It uses Docker and docker-compose for easier local setup, includes testing modules, and emphasizes metadata-only detection to stay passive and privacy-conscious. In short, SENTINEL-X looks like a security analytics prototype that demonstrates how suspicious network patterns can be detected in near-real time using flow data and a readable, modular architecture.
 
 ---
 
