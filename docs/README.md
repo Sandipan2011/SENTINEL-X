@@ -22,7 +22,7 @@
 
 ---
 
-## 🚀 About Me
+## 🚀 About SENTINEL-X
 
 I’m a developer who enjoys building practical, scalable, and user-friendly applications. I love learning new technologies, improving workflows, and turning ideas into real projects.
 
