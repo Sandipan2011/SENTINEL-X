@@ -91,10 +91,6 @@ The repository is structured around a backend detection pipeline, API and WebSoc
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-FF69B4?style=for-the-badge" />
-</p>
-
 # SENTINEL-X
 
 SENTINEL-X is a read-only cyber threat detection prototype for unidirectional IP telemetry. It ingests passively observed flow metadata, extracts signal-rich features, and raises threat alerts without any active return path or payload decryption.
@@ -140,3 +136,7 @@ The prototype was validated locally against replayed synthetic traffic with a su
 - metadata-only analysis for encrypted sessions
 - no decryption or inbox-channel response
 - no active scan or mitigation execution
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-FF69B4?style=for-the-badge" />
+</p>
