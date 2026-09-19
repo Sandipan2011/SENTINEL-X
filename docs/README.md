@@ -1,142 +1,170 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Sandipan+%F0%9F%91%8B;Full-Stack+Developer;Python+%7C+JavaScript+%7C+React;Building+useful+projects+%F0%9F%9A%80" alt="Typing SVG" />
-</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Focus-Web%20Development-7C3AED?style=for-the-badge&logo=web&logoColor=white" />
-  <img src="https://img.shields.io/badge/Learning-Open%20Source-10B981?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Available%20for%20projects-F59E0B?style=for-the-badge" />
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/tridib-duari-652150293/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:tridibduari26@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://github.com/Sandipan2011" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Sandipan2011-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
-
----
-
-## 🚀 About SENTINEL-X
-
-SENTINEL-X is a cyber threat detection prototype focused on analyzing passive network telemetry to identify suspicious activity without inspecting packet contents. Built mainly in Python, with a React frontend for visual monitoring, the project ingests flow metadata, extracts behavioral features over short windows, and applies explainable detection logic to surface alerts for issues like DDoS attacks, botnet beaconing, DNS tunneling, port scanning, TLS-based malware patterns, and data exfiltration. It is designed as a practical research/demo system rather than a full production IDS.
-
-The repository is structured around a backend detection pipeline, API and WebSocket services, replay utilities for synthetic traffic, and a lightweight dashboard frontend. It uses Docker and docker-compose for easier local setup, includes testing modules, and emphasizes metadata-only detection to stay passive and privacy-conscious. In short, SENTINEL-X looks like a security analytics prototype that demonstrates how suspicious network patterns can be detected in near-real time using flow data and a readable, modular architecture.
-
----
-
-## 🧠 Tech Stack
-
-### Languages
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
-
-### Frontend
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-</p>
-
-### Backend & Tools
-<p>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-</p>
-
----
-
-## 🌟 Featured Projects
-
-- [Project One](https://github.com/Sandipan2011/project-one) — A modern web application built with clean UI and practical functionality.
-- [Project Two](https://github.com/Sandipan2011/project-two) — A project focused on solving a real-world problem with efficient design and logic.
-- [Project Three](https://github.com/Sandipan2011/project-three) — A robust solution showcasing frontend/backend integration and deployment-ready thinking.
-
-> Replace the project links with your real repositories once they are ready.
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sandipan2011&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sandipan2011&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Sandipan2011&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
----
-
-## 🤝 Connect With Me
-
-- [LinkedIn](https://www.linkedin.com/in/tridib-duari-652150293/)
-- [Email](mailto:tridibduari26@gmail.com)
-- [GitHub](https://github.com/Sandipan2011)
-
----
-
 # SENTINEL-X
 
-SENTINEL-X is a read-only cyber threat detection prototype for unidirectional IP telemetry. It ingests passively observed flow metadata, extracts signal-rich features, and raises threat alerts without any active return path or payload decryption.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Threat%20Detection-Cyber%20Security-7C3AED?style=for-the-badge" alt="Cyber Security" />
+</p>
+
+<p align="center">
+  <strong>Passive network telemetry analysis for detecting suspicious behavior without decrypting traffic.</strong>
+</p>
+
+---
+
+## Overview
+
+SENTINEL-X is a read-only cyber threat detection prototype designed for unidirectional IP telemetry. It ingests passively observed flow metadata, extracts signal-rich features, and raises threat alerts based on explainable heuristics rather than opaque black-box models.
+
+The project focuses on building a lightweight, observable security monitoring workflow that can process metadata-rich network events and highlight suspicious patterns in near real time.
+
+---
+
+## Why this project exists
+
+Traditional monitoring systems often depend on deep packet inspection or active probing. SENTINEL-X takes a different approach:
+
+- Passive-only observation
+- Metadata-first analysis
+- Explainable detection logic
+- Suitable for prototype and demonstration environments
+- No payload inspection or decryption
+
+---
 
 ## Threat classes covered
 
 - Volumetric and protocol DDoS
 - Botnet beaconing
-- DNS tunneling and DGA-style domains
-- Encrypted-sessions malware using TLS metadata only
+- DNS tunneling and DGA-like domain behavior
+- TLS-based encrypted-session malware indicators
 - Reconnaissance and port scanning
 - Data exfiltration
 
-## Runtime model
+---
 
-The current prototype does not depend on external ML training artifacts. It uses deterministic, explainable heuristics and streaming aggregations over short windows, which is appropriate for a fast prototype and is intentionally read-only.
+## Detection model
 
-### Example detection signals
+The current prototype does not rely on external machine-learning artifacts or training pipelines. Instead, it uses deterministic heuristics and streaming aggregation over short time windows.
 
-- high source fan-out across destination ports
-- sustained packet and byte bursts over a rolling window
-- regular inter-arrival timing in repeated flows
-- long or high-entropy DNS labels
-- TLS fingerprint anomalies with low-version metadata
-- strong outbound-to-inbound byte asymmetry
+### Example signals
 
-## Replay and API
+- High source fan-out across destination ports
+- Sustained packet and byte bursts in rolling windows
+- Regular timing patterns in repeated flows
+- Long or high-entropy DNS labels
+- TLS fingerprint anomalies based on metadata
+- Strong outbound-to-inbound byte asymmetry
 
-The app exposes:
+This keeps the system transparent, easy to reason about, and useful for research, learning, and prototype security monitoring.
 
-- `/health` for health checks
-- `/api/alerts` for the most recent alerts
-- `/api/replay` for synthetic attack replay
-- `/dashboard` for a lightweight browser dashboard
+---
 
-## Throughput note
+## Architecture
 
-The prototype was validated locally against replayed synthetic traffic with a sustained rate of roughly 250 flows in a short stream, which is suitable for a functional prototype demonstration.
+```text
+SENTINEL-X/
+├── backend/             # Detection engine, APIs, streaming, alerts, and storage
+├── frontend/            # React dashboard
+├── replay/              # Synthetic traffic generation and replay tools
+├── tests/               # Integration and validation tests
+├── docs/                # Project documentation
+├── Dockerfile
+├── docker-compose.yml
+└── .env.example
+```
+
+The backend provides the detection pipeline, alert handling, API routes, and WebSocket services. The frontend provides a lightweight browser dashboard for viewing activity and alerts. Replay utilities support repeatable demonstrations using synthetic traffic.
+
+---
+
+## Runtime and API
+
+The application exposes:
+
+- `/health` — health checks
+- `/api/alerts` — recent detections
+- `/api/replay` — synthetic attack replay
+- `/dashboard` — browser dashboard
+
+---
+
+## Quick start
+
+### Using Docker Compose
+
+```bash
+git clone https://github.com/Sandipan2011/SENTINEL-X.git
+cd SENTINEL-X
+cp .env.example .env
+docker compose up --build
+```
+
+After the services start, open the dashboard at the address configured by the local deployment.
+
+### Local development
+
+The backend and frontend can also be run independently. Refer to the service configuration and package files in `backend/` and `frontend/` for the relevant development commands.
+
+---
 
 ## Security constraints
 
-- passive-only observation
-- metadata-only analysis for encrypted sessions
-- no decryption or inbox-channel response
-- no active scan or mitigation execution
+SENTINEL-X intentionally follows a conservative, read-only design:
+
+- Passive-only observation
+- Metadata-only analysis for encrypted sessions
+- No payload decryption
+- No active scanning
+- No mitigation execution
+- No inbox-channel response behavior
+
+Use synthetic or authorized telemetry only when testing the project.
+
+---
+
+## Performance note
+
+The prototype was validated locally against replayed synthetic traffic at a sustained rate of roughly 250 flows in a short stream. This is intended as a functional demonstration benchmark, not a production-scale capacity guarantee.
+
+---
+
+## Technology stack
+
+- **Backend:** Python
+- **Frontend:** JavaScript, React, Vite, CSS
+- **Interfaces:** HTTP APIs and WebSockets
+- **Deployment:** Docker and Docker Compose
+- **Analysis:** Flow features, streaming windows, deterministic detection heuristics
+
+---
+
+## Project status
+
+SENTINEL-X is an active prototype for experimentation, learning, and security research. Future improvements may include richer telemetry support, stronger test coverage, additional detection strategies, improved dashboard visualizations, and production-oriented observability.
+
+---
+
+## Contributing
+
+Contributions are welcome. Useful areas include:
+
+- Improving detection accuracy and explainability
+- Adding tests and replay scenarios
+- Enhancing the dashboard
+- Improving documentation
+- Supporting additional telemetry formats
+
+Please open an issue before starting a large change so the proposed direction can be discussed.
+
+---
+
+## Disclaimer
+
+SENTINEL-X is provided for educational, research, and authorized defensive-monitoring purposes. Do not use it to inspect or interact with networks without permission.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-FF69B4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Prototype%20Demo-10B981?style=for-the-badge" alt="Prototype Demo" />
 </p>
